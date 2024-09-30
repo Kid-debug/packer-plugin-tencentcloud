@@ -50,8 +50,6 @@ data "st-tencentcloud-images" "test_image" {
   filters = {
       "image-name"    = "img-5566"
       "image-type"    = "PRIVATE_IMAGE"
-      "tag-key"       = "registrar"
-      "tag-value"     = "namecheap"
       "tag:registrar" = "namecheap" // tag:[key] = "value"
     }
   instance_type = "S1.SMALL1"
